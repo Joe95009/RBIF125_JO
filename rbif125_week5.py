@@ -94,7 +94,7 @@ model = model.to(device)
 criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
 
-num_epochs=15
+num_epochs=10
 for epoch in range(num_epochs):
  # Iterate over training batches
    print(f"Epoch [{epoch + 1}/{num_epochs}]")
